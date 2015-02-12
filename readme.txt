@@ -55,7 +55,7 @@ Why just the 3 Street Figther III games?
 Baiscally, because I'm still testing, they're the three games most people are going to want to play and they're the three games the emulation core is optimised towards.  At the minute there's still no sound, but once I get the CPS3 audio working I'll add in the other CPS3 games (there aren't many).
 
 How to compile?
-Comile with 'make -f Makefile.PiCPS3 -j4'
+Compile with 'make -f Makefile.PiCPS3 -j4'
 
 At the minute this is only compatible with the Pi 2, simply because with the few attempts I made to load a CPS3 rom in a FBA2X binary without the Cortex-A7 and NEON compile flags, the emulator crashed with a floating point exception.  I'm sure there's a set of compile options that'll allow this to work on a Pi 1, but I'd imagine CPS3 emulation would be too demanding for the Pi 1 models anyway, so that problem is on the back burner until I can get the audio working.  - BarryK
 
