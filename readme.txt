@@ -57,7 +57,7 @@ Baiscally, because I'm still testing, they're the three games most people are go
 How to compile?
 Comile with 'make -f Makefile.PiCPS3 -j4'
 
-At the minute this is only compatible with the Pi 2, simply because any attempt to load a CPS3 rom in a FBA2X binary without the ARMv7 and NEON compile flags causes the emulator to crash with a floating point exception.  I'd imagine CPS3 emulation would be too demanding for the Pi 1 models anyway, so that problem is on the back burner until I can get the audio working.  - BarryK
+At the minute this is only compatible with the Pi 2, simply because with the few attempts I made to load a CPS3 rom in a FBA2X binary without the Cortex-A7 and NEON compile flags, the emulator to crashed with a floating point exception.  I'm sure there's a set of compile options that'll allow this to work on a Pi 1, but I'd imagine CPS3 emulation would be too demanding for the Pi 1 models anyway, so that problem is on the back burner until I can get the audio working.  - BarryK
 
 
 
