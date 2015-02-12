@@ -1,3 +1,67 @@
+This is a slightly tweaked version of PiFBA / FBA2x for the Raspberry Pi 2.
+
+What's changed?
+I've enabled CPS3 emulation, at the minute it's just the three Street Fighter III games.
+
+***ONLY THE NOCD VERSIONS WILL WORK***
+
+So that's "sfiiin.zip", "sfiii2n.zip" or "sfiii3n.zip".  And they go in your normal rom folder with no special requirements (like a bios rom).
+
+The zip files for correct versions of the working roms will contain EXACTLY these files, if your rom zip file contains different files it's not the same version and it won't work:-
+
+// --------------------------------------------------------
+// Street Fighter III: New Generation (Asia 970204, NO CD)
+// --------------------------------------------------------
+sfiiin.zip -
+	sfiii_asia_nocd.29f400.u2
+	10
+	30
+	31
+	40
+	41
+	50
+
+// ----------------------------------------------------------------
+// Street Fighter III 2nd Impact: Giant Attack (Asia 970930, NO CD)
+// ----------------------------------------------------------------
+sfiii2n.zip -
+	sfiii2_asia_nocd.29f400.u2
+	10
+	20
+	30
+	31
+	40
+	41
+	50
+	51
+
+// -------------------------------------------------------------------------
+// Street Fighter III 3rd Strike: Fight for the Future (Japan 990512, NO CD)
+// -------------------------------------------------------------------------
+sfiii3n.zip -
+	sfiii3_japan_nocd.29f400.u2
+	10
+	20
+	30
+	31
+	40
+	41
+	50
+	51
+	60
+	61
+
+Why just the 3 Street Figther III games?
+Baiscally, because I'm still testing, they're the three games most people are going to want to play and they're the three games the emulation core is optimised towards.  At the minute there's still no sound, but once I get the CPS3 audio working I'll add in the other CPS3 games (there aren't many).
+
+How to compile?
+Comile with 'make -f Makefile.PiCPS3 -j4'
+
+At the minute this is only compatible with the Pi 2, simply because any attempt to load a CPS3 rom in a FBA2X binary without the ARMv7 and NEON compile flags causes the emulator to crash with a floating point exception.  I'd imagine CPS3 emulation would be too demanding for the Pi 1 models anyway, so that problem is on the back burner until I can get the audio working.  - BarryK
+
+
+
+***  ORIGINAL README  ****
 =Final Burn Alpha 2x for Raspberry Pi by Squid=
 
 *INTRODUCTION*

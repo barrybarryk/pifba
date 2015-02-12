@@ -4,6 +4,17 @@
 #define DRV extern struct BurnDriver
 DRV		BurnDrvCpsRckmanj;
 //		BurnDrv4play;			// 4 player  input test cartridge
+
+// Add our CPS3 drivers, both the PARENT rom AND the NOCD version
+//  These are also added to the driver array below		-BarryK
+DRV		BurnDrvSfiii;
+DRV		BurnDrvSfiiin;
+DRV		BurnDrvSfiii2;
+DRV		BurnDrvSfiii2n;
+DRV		BurnDrvSfiii3;
+DRV		BurnDrvSfiii3n;
+//					End									-BarryK
+
 DRV		BurnDrvGtmra;
 DRV		BurnDrvGtmr;
 DRV		BurnDrvCps1941j;
@@ -1215,6 +1226,12 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvCpsSf2hf,			// Street Fighter II' - hyper fighting (street fighter 2' T 921209 ETC)
 	&BurnDrvCpsSf2t,			// Street Fighter II' - hyper fighting (street fighter 2' T 921209 USA)
 	&BurnDrvCpsSf2tj,			// Street Fighter II' Turbo - hyper fighting (street fighter 2' T 921209 Japan)
+	&BurnDrvSfiii,				// Street Fighter III: New Generation (Japan 970204)
+	&BurnDrvSfiiin,				// Street Fighter III: New Generation (Asia 970204, NO CD)
+	&BurnDrvSfiii2,				// Street Fighter III 2nd Impact: Giant Attack (Japan 970930)
+	&BurnDrvSfiii2n,			// Street Fighter III 2nd Impact: Giant Attack (Asia 970930, NO CD)
+	&BurnDrvSfiii3,				// Street Fighter III 3rd Strike: Fight for the Future (USA 990512)
+	&BurnDrvSfiii3n,			// Street Fighter III 3rd Strike: Fight for the Future (Japan 990512, NO CD)
 	&BurnDrvCpsSfzjr2,			// Street Fighter Zero (950605 Japan)
 	&BurnDrvCpsSfza,			// Street Fighter Zero (950627 Asia)
 	&BurnDrvCpsSfzh,			// Street Fighter Zero (950627 Hispanic)
